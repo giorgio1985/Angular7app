@@ -1,0 +1,29 @@
+header {
+	background-color: #7700ff;
+	.logo {
+		font-weight: bold;
+	}
+	nav {
+		justify-content: right;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				float: left;
+
+				a {
+					padding: 1.5em;
+					text-transform: uppercase;
+					font-size: .8em;
+
+					a:hover {
+						background: #8e2bff;
+					}
+				}
+			}
+		}
+	}
+}

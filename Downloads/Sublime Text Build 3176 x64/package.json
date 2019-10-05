@@ -1,0 +1,23 @@
+{
+  "name": "giorgino",
+  "version": "1.0.0",
+  "description": "angular 7 ",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "giorgio1985",
+  "license": "ISC"
+}
