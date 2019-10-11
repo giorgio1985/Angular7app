@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-
+//papa@giova.it  email di prova
+//999999999      pass di prova
 console.log('backend connected at port: ' + port);
 
   app.use('/signup',(req, res) => {
@@ -81,7 +82,7 @@ connection.connect(function(err) {
 
 connection.query(sql, (err, result) => {
     if (err) throw err;
-    if (result) {
+    if (!err) {
     	    console.log("table selected");
     console.log(result);
 } else if (result='') {
