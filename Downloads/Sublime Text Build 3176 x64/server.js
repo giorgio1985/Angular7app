@@ -73,20 +73,24 @@ connection.end();
   database : 'database1'
 });
 
-connection.connect(function(err) {
+connection.connect((err) => {
   if (err) throw err;
   console.log("Connected!");
   });
 
  
 
-connection.query(sql, (err, result) => {
-    if (err) throw err;
-    if (!err) {
-    	    console.log("table selected");
+connection.query(sql, (err, row ,result) => {
+    if (err) { 
+      throw err;
+   } else if (row.lenght == 0 || !row.lenght) {
+       console.log("empty row");
+       res.send({redirect: "http://localhost:4200/login"});
+       next();
+   } else 
+    if (result) {
+    console.log("table selected");
     console.log(result);
-} else if (result='') {
-	console.log('Result empty');
 }
 
    });
