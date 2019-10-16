@@ -85,8 +85,8 @@ connection.query(sql, (err, row ,result) => {
       throw err;
    } else if (row.lenght == 0 || !row.lenght) {
        console.log("empty row");
-       res.send({redirect: "http://localhost:4200/login"});
-       next();
+       res.send(/*{redirect: "http://localhost:4200/login"}*/);
+      // next();
    } else 
     if (result) {
     console.log("table selected");
