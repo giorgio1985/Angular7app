@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { FormPageComponent } from './form-page/form-page.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     ContactComponent,
     LoginComponent,
     FormPageComponent,
-    WelcomePageComponent 
+    WelcomePageComponent,
+    BodyComponent 
   ],
   imports: [
     BrowserModule,

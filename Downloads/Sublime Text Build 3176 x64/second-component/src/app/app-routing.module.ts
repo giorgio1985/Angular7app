@@ -9,11 +9,11 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 const routes: Routes = [
 
-{ path: 'home', redirectTo: '/' },  // home  rt /:redirectTo:
+//{ path: 'home', redirectTo: '/' },  // home  rt /:redirectTo:
 { path: 'about', component: AboutUsComponent },
 { path: 'contact', component: ContactComponent },
 { path: 'login', component: LoginComponent },
-//{ path: 'home', component: AppComponent },
+{ path: 'home', component: AppComponent },
 { path: 'subscribe', component: FormPageComponent },
 { path: 'welcome', component: WelcomePageComponent }
 
